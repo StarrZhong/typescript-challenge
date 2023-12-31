@@ -7,6 +7,7 @@ interface AddressInfo {
     street: string;
     city: string;
 }
+interface FullUserInfo extends BasicUserInfo, AddressInfo{}
 
 /**
  * 任務：請實作一個 interface 或 type，藉此來建立 `FullUserInfo`，將 `BasicUserInfo` 和 `AddressInfo` 兩個介面的資訊合併。
@@ -34,4 +35,5 @@ interface AddressInfo {
  */
 export function createFullUserInfo(user: FullUserInfo): FullUserInfo {
     // 請在此處寫下你的程式碼
+    return user;
 }
